@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
 
-    bucket = aws_s3_bucket.my_bucket_two.bucket
+    bucket = "aws-terraform-prafful-bucket-with-state"
     key = "dev/terraform.tfstate"
     region = "us-east-1"
     encrypt = true
