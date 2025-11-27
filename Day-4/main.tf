@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
 
-    bucket = aws_s3_bucket.my_bucket_one.bucket
+    bucket = aws_s3_bucket.my_bucket_two.bucket
     key = "dev/terraform.tfstate"
     region = "us-east-1"
     encrypt = true
@@ -26,12 +26,12 @@ provider "aws" {
 
 
 # create s3 bucket
-resource "aws_s3_bucket" "my_bucket_one" {
-  bucket = "aws-terraform-prafful-bucket"
+resource "aws_s3_bucket" "my_bucket_two" {
+  bucket = "aws-terraform-prafful-bucket-with-state"
   
 
   tags = {
-    Name        = "TerraformExampleBucket"
+    Name        = "TerraformExampleBucket-with-state"
     Environment = "Dev"
   }
 }
