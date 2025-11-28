@@ -1,9 +1,11 @@
 Blog Link 
 
-https://terraform-day4.hashnode.dev/the-secret-map-of-the-cloud-why-the-terraform-state-file-is-your-most-valuable-and-dangerous-asset
+https://terraform-day5.hashnode.dev/mastering-variables-in-terraform-day-5-of-the-aws-terraform-challenge
+
+
 
 Linkedin Post Link 
 
 
 
-https://www.linkedin.com/posts/priyanshu8787_devops-cloudsecurity-terraform-activity-7399874702271217664-kbRq
+https://www.linkedin.com/posts/priyanshu8787_30daysofawsterraform-terraform-devops-activity-7400246455111811072-vRoZ
