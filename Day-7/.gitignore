@@ -1,0 +1,18 @@
+.terraform*
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+crash.log
+override.tf 
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terragrunt-cache/
+terraform.tfvars
+*.tfvars.json
+.terraform/
+
+# This file is used to ignore local configuration files and sensitive data. Does not get uploaded to version control.
+# But what I believe is that terraform.tfvars should be uploaded to version control as it contains variable definitions. 
+# But we can always use terraform.tfvars.example to upload to version control and keep terraform.tfvars locally with sensitive data.
+# Also we can use some other methods to manage sensitive data like using AWS Secrets Manager or HashiCorp Vault.
