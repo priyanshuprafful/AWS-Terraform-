@@ -8,7 +8,6 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 .terragrunt-cache/
-terraform.tfvars
 *.tfvars.json
 .terraform/
 
