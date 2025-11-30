@@ -17,3 +17,18 @@ variable "instance_count" {
   
 }
 
+variable "monitoring_enabled" {
+
+  description = "Enable detailed monitoring"
+  type        = bool
+  default     = true
+  
+}
+
+variable "associate_public_ip" {
+
+  description = "Associate a public IP address with the instance"
+  type        = bool
+  default     = true
+  
+}
