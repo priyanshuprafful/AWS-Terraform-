@@ -32,3 +32,11 @@ variable "associate_public_ip" {
   default     = true
   
 }
+
+variable "cidr_ipv4" {
+  description = "CIDR block for IPv4 ingress rule"
+  type        = list(string)
+  default     = ["10.0.0.0/8", "192.168.0.0/16", "172.16.0.0/12"]
+
+  
+}
