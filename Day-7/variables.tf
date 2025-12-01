@@ -40,3 +40,11 @@ variable "cidr_ipv4" {
 
   
 }
+
+
+variable "instance_types" {
+  description = "Type of EC2 instances to create"
+  type        = list(string)
+  default     = ["t2.micro", "t3.micro", "t3a.micro" , "t4g.micro"]
+  
+}
