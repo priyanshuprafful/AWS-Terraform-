@@ -1,3 +1,3 @@
-environment = "pre-prod"
+# environment = "pre-prod"
 
 instance_count = 1

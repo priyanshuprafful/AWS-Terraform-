@@ -8,10 +8,12 @@ resource "aws_instance" "example" {
   monitoring = var.monitoring_enabled
   associate_public_ip_address = var.associate_public_ip
 
-  tags = {
-    environment = var.environment
-    Name = "${var.environment}-EC2-instance"
-  }
+
+  tags = var.tags
+  # tags = {
+  #   environment = var.environment
+  #   Name = "${var.environment}-EC2-instance"
+  # }
 }
 
 

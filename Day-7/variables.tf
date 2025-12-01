@@ -56,3 +56,14 @@ variable "allowed_region" {
   default     = ["us-east-1", "us-west-2", "eu-west-1"]
   
 }
+
+variable "tags" {
+  description = "Tags to apply to resources"
+  type        = map(string)
+  default     = {
+    Owner       = "${var.environmane}-priyanshuprafful"
+    Project     = "TerraformSeries"
+    Environment = var.environment
+  }
+  
+}
