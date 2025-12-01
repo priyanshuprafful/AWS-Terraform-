@@ -61,7 +61,7 @@ variable "tags" {
   description = "Tags to apply to resources"
   type        = map(string)
   default     = {
-    Owner       = "${var.environmane}-priyanshuprafful"
+    Owner       = "${var.environment}-priyanshuprafful"
     Project     = "TerraformSeries"
     Environment = var.environment
   }
