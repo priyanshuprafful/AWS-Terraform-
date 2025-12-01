@@ -48,3 +48,11 @@ variable "instance_types" {
   default     = ["t2.micro", "t3.micro", "t3a.micro" , "t4g.micro"]
   
 }
+
+
+variable "allowed_region" {
+  description = "Allowed AWS region"
+  type        = set(string)
+  default     = ["us-east-1", "us-west-2", "eu-west-1"]
+  
+}
