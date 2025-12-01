@@ -4,7 +4,7 @@ resource "aws_instance" "example" {
   count = var.instance_count
   ami           = "ami-026012a857b852da3" # RHEL 9 AMI in us-east-1
   instance_type = var.instance_types[0]
-  region = tolist(var.allowed_region)[0]
+  region = var.allowed_region[0]
   monitoring = var.monitoring_enabled
   associate_public_ip_address = var.associate_public_ip
 
