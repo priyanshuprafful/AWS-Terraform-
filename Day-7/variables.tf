@@ -75,3 +75,19 @@ variable "ingress_values" {
   default = [443, "tcp", 443]
   
 }
+
+variable "config" {
+  description = "A map of configuration values"
+  type        = object({
+    region = string,
+    monitoring = bool,
+    instance_count = number
+
+  })
+  default     = {
+    region         = "us-east-1",
+    monitoring     = true,
+    instance_count = 1
+  }
+  
+}
