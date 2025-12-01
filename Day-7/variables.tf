@@ -61,6 +61,7 @@ variable "tags" {
   description = "Tags to apply to resources"
   type        = map(string)
   default     = {
+    Name        = "Terraform-EC2-instance"
     Owner       = "priyanshuprafful"
     Project     = "TerraformSeries"
     Environment = "dev"
