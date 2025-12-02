@@ -91,3 +91,10 @@ variable "config" {
   }
   
 }
+
+variable "bucket_names" {
+  description = "List of S3 bucket names"
+  type        = list(string)
+  default     = ["my-unique-bucket-prafful-123456", "my-unique-bucket-prafful-654321"]
+  
+}
