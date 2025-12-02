@@ -1,12 +1,11 @@
 Blog Link 
 
 
-https://terraform-day07.hashnode.dev/day-7-mastering-terraform-type-constraints-variables-no-more-guesswork
-
+https://terraform-day8.hashnode.dev/day-8-mastering-terraform-meta-arguments-making-your-code-smarter
 
 
 Linkedin Post Link 
 
 
 
-https://www.linkedin.com/posts/priyanshu8787_devops-terraform-aws-activity-7401190448687554560-gGO4
+https://www.linkedin.com/posts/priyanshu8787_30daysofterraform-devops-terraform-activity-7401555105508114432-k8Aa
