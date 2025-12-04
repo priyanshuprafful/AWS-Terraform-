@@ -5,4 +5,8 @@ resource "aws_instance" "example" {
   region = var.allowed_region[1]
 
   tags = var.tags
+
+  lifecycle {
+    create_before_destroy = true
+  }
 } 
