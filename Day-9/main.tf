@@ -7,7 +7,7 @@ resource "aws_instance" "example" {
   tags = var.tags
 
   lifecycle {
-    create_before_destroy = true 
+    create_before_destroy = false 
    # prevent_destroy = true
   }
 } 
