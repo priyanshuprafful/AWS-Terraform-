@@ -34,3 +34,12 @@ resource "aws_security_group" "example_sg" {
   }
   tags = var.tags
 }
+
+locals {
+  all_instance_ids = aws_instance.example.*.id
+}
+
+output "instance_ids" {
+  description = "IDs of the created EC2 instances"
+  value       = local.all_instance_ids
+}
