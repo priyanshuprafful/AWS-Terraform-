@@ -123,3 +123,55 @@ resource "aws_instance" "app_with_sg" {
     ]
   }
 }
+
+
+
+
+
+
+
+# ==============================
+# Example 4: precondition
+# Use Case: Ensure we're deploying in an allowed region
+# ==============================
+
+# resource "aws_s3_bucket" "regional_validation" {
+#   bucket = "bucket-regional-validation-priyanshu69"
+
+#   tags = var.tags
+
+#   # Lifecycle Rule: Validate region before creating resource
+#   # This prevents resource creation in unauthorized regions
+#   lifecycle {
+#     precondition {
+#       condition     = contains(var.allowed_regions, data.aws_region.current.name)
+#       error_message = "ERROR: This resource can only be created in allowed regions: ${join(", ", var.allowed_regions)}. Current region: ${data.aws_region.current.name}"
+#     }
+#   }
+# }
+
+# ==============================
+# Example 5: postcondition
+# Use Case: Ensure S3 bucket has required tags after creation
+# ==============================
+
+resource "aws_s3_bucket" "compliance_bucket" {
+  bucket = "bucket-regional-validation-priyanshu69"
+
+  tags = var.tags
+
+  # Lifecycle Rule: Validate bucket has required tags after creation
+  # This ensures compliance with organizational tagging policies
+  lifecycle {
+    postcondition {
+      condition     = contains(keys(var.tags), "Compliance")
+      error_message = "ERROR: Bucket must have a 'Compliance' tag for audit purposes!"
+    }
+
+    postcondition {
+      condition     = contains(keys(var.tags), "Environment")
+      error_message = "ERROR: Bucket must have an 'Environment' tag!"
+    }
+  }
+}
+
