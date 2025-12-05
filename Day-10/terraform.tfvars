@@ -1,3 +1,4 @@
 # environment = "pre-prod"
 
-instance_count = 1
+environment = "dev"
+instance_count = 2
