@@ -7,3 +7,24 @@ resource "aws_instance" "example" {
 
   tags = var.tags
 }
+
+# create security group
+resource "aws_security_group" "example_sg" {
+  name        = "example_sg_${var.environment}"
+  description = "Example security group for ${var.environment} environment"
+
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "HTTP"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+  tags = var.tags
+}
