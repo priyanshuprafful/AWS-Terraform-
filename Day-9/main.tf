@@ -1,6 +1,6 @@
 # create ec2 instance
 resource "aws_instance" "example" {
-  ami           = "ami-09c813fb71547fc4f" # Example AMI ID, replace with a valid one for your region
+  ami           = "ami-0fa3fe0fa7920f68e" # Example AMI ID, replace with a valid one for your region
   instance_type = var.instance_types[0]
   region = var.allowed_region[1]
 
@@ -20,7 +20,7 @@ resource "aws_instance" "example" {
 # Launch Template for Auto Scaling Group
 resource "aws_launch_template" "app_server" {
   name_prefix   = "app-server-"
-  image_id      = "ami-09c813fb71547fc4f"
+  image_id      = "ami-0fa3fe0fa7920f68e"
   instance_type = var.instance_types[0]
 
   tag_specifications {
