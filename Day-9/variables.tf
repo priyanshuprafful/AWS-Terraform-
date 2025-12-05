@@ -65,6 +65,7 @@ variable "tags" {
     Owner       = "priyanshuprafful"
     Project     = "TerraformSeries"
     Environment = "dev"
+    Compliance  = "yes"
   }
   
 }
