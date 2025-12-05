@@ -20,7 +20,7 @@ resource "aws_instance" "example" {
 # Launch Template for Auto Scaling Group
 resource "aws_launch_template" "app_server" {
   name_prefix   = "app-server-"
-  image_id      = "ami-026012a857b852da3"
+  image_id      = "ami-09c813fb71547fc4f"
   instance_type = var.instance_types[0]
 
   tag_specifications {
