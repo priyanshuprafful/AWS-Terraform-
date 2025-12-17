@@ -1,6 +1,6 @@
 locals {
     formatted_project_name = lower(var.project_name)
-    formatted_bucket_name = replace(substr(lower(var.bucket_name), 0, 63)," ", "")
+    formatted_bucket_name = replace(replace(substr(lower(var.bucket_name), 0, 63)," ", ""), "!", "")
 }
 
 # create s3 bucket
