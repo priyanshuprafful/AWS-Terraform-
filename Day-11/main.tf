@@ -1,12 +1,12 @@
 locals {
     formatted_project_name = lower(var.project_name)
     formatted_bucket_name = replace(replace(substr(lower(var.bucket_name), 0, 63)," ", ""), "!", "")
-    port_list = tonumber(split(",", var.allowed_ports))
+    port_list = split(",", var.allowed_ports)
 
     sg_rules = [
         for port in local.port_list : {
             name = "port is - ${port}" # to number bhi use kar sakte hai ya karna chaiye saath mein
-            port = port
+            port = tonumber(port)
             description = "Allow inbound traffic on port ${port}"
         }
     ]
