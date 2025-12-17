@@ -28,3 +28,17 @@ variable "allowed_ports" {
   default = "80,443,8080,3306"
   
 }
+
+variable "instance_sizes" {
+  default =  {
+    dev = "t3.micro"
+    prod = "t3.medium"
+    staging = "t3.small"
+  }
+  
+}
+
+variable "environment" {
+  default = "dev"
+  
+}

@@ -11,6 +11,9 @@ locals {
             description = "Allow inbound traffic on port ${port}"
         }
     ]
+
+
+    instance_size = lookup(var.instance_sizes, var.environment, "t2.micro")
 }
 
 # create s3 bucket

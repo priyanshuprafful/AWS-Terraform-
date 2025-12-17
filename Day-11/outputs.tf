@@ -27,3 +27,7 @@ output "port_number_list" {
     value = local.port_number_list
   
 }
+
+output "instance_size_for_environment" {
+    value = local.instance_size
+}
