@@ -22,3 +22,9 @@ variable "environment_tags" {
 variable "bucket_name" {
   default = "ProjectAlphaStorageBucket with CAPS and spaces tu hai prafful !!!"
 }
+
+variable "allowed_ports" {
+
+  default = "80,443,8080,3306"
+  
+}
