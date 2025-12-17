@@ -2,6 +2,7 @@ locals {
     formatted_project_name = lower(var.project_name)
     formatted_bucket_name = replace(replace(substr(lower(var.bucket_name), 0, 63)," ", ""), "!", "")
     port_list = split(",", var.allowed_ports)
+    port_number_list = [ for p in local.port_list : tonumber(p) ]
 
     sg_rules = [
         for port in local.port_list : {

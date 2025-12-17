@@ -22,3 +22,8 @@ output "port_list" {
 output "security_group_rules" {
     value = local.sg_rules
 }
+
+output "port_number_list" {
+    value = local.port_number_list
+  
+}
