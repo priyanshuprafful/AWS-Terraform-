@@ -20,5 +20,5 @@ variable "environment_tags" {
 }
 
 variable "bucket_name" {
-  default = "ProjectAlphaStorageBucket with CAPS and spaces !!!"
+  default = "ProjectAlphaStorageBucket with CAPS and spaces tu hai prafful !!!"
 }
