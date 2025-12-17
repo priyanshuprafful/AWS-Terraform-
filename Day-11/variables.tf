@@ -18,3 +18,7 @@ variable "environment_tags" {
     cost_center = "CC1001"
   }
 }
+
+variable "bucket_name" {
+  default = "ProjectAlphaStorageBucket with CAPS and spaces"
+}
