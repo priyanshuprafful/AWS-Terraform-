@@ -6,7 +6,6 @@ locals {
 resource "aws_s3_bucket" "project_bucket_day11" {
     bucket = replace(local.formatted_project_name, " ", "-")
     
-    tags = {
-        Environment = "dev"
-    }   
+    tags = merge(var.default_tags, var.environment_tags)
+    
 }  

@@ -3,3 +3,18 @@ variable "project_name" {
   type        = string
   default = "Project ALPHA Resource"
 }
+
+variable "default_tags" {
+  default = {
+    company       = "DevOps Team"
+    managed_by = "Prafful"
+  }
+  
+}
+
+variable "environment_tags" {
+  default = {
+    environment = "Development"
+    cost_center = "CC1001"
+  }
+}
