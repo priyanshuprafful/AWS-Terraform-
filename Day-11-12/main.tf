@@ -14,6 +14,8 @@ locals {
 
 
     instance_size = lookup(var.instance_sizes, var.environment, "t2.micro")
+
+    positive_cost = [ for cost in var.monthly_cost : abs(cost) ]
 }
 
 # create s3 bucket
