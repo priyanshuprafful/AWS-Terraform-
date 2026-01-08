@@ -57,3 +57,12 @@ variable "instance_type" {
   }
   
 }
+
+variable "backup_name" {
+  default = "ProjectAlphaBackup"
+
+  validation {
+    condition = endswith(var.backup_name, "Backup")
+    error_message = "Backup name must end with 'Backup'."
+  }
+}
