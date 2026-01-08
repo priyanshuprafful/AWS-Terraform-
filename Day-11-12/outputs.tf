@@ -46,5 +46,5 @@ output  "positive_cost" {
 }   
 
 output "max_cost" {
-    value = max(output.positive_cost)
-} # yaha firse for loop lagane ki jarurat nai let us check 
+    value = max([ for cost in var.monthly_cost : abs(cost) ])
+} 
