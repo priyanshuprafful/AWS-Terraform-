@@ -38,5 +38,5 @@ output "credentials" {
 }
 
 output "all_locations" {
-    value =  concat(var.default_locations, var.user_locations)
+    value =  toset(concat(var.default_locations, var.user_locations))
 }
