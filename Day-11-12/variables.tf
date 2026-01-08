@@ -66,3 +66,8 @@ variable "backup_name" {
     error_message = "Backup name must end with 'Backup'."
   }
 }
+
+variable "credentials" {
+  default = "prafful"
+  sensitive = true 
+}
