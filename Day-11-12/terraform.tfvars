@@ -1,2 +1,2 @@
 instance_type = "t2.small"
-backup_name = "ProjectAlphaBackupV2"
+backup_name = "ProjectAlphaBackup"
