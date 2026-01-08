@@ -40,3 +40,7 @@ output "credentials" {
 output "all_locations" {
     value =  toset(concat(var.default_locations, var.user_locations))
 }
+
+output  "positive_cost" {
+   value = [ for cost in var.monthly_cost : abs(cost) ]
+}   

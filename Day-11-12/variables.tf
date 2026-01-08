@@ -81,3 +81,8 @@ variable "default_locations" {
   default = ["us-east-1"]
    
 }
+
+variable "monthly_cost" {
+  default = [-50 , 100 , 200 , -10 , 300] # Some negative values means debits
+  
+}
