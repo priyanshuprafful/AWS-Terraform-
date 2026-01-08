@@ -44,3 +44,7 @@ output "all_locations" {
 output  "positive_cost" {
    value = [ for cost in var.monthly_cost : abs(cost) ]
 }   
+
+output "max_cost" {
+    value = max(output.positive_cost)
+} # yaha firse for loop lagane ki jarurat nai let us check 
