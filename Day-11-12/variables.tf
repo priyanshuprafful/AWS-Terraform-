@@ -42,3 +42,18 @@ variable "environment" {
   default = "dev"
   
 }
+
+variable "instance_type" {
+  default = "t2.micro"
+
+  validation {
+    condition = length(var.instance_type) >= 2 && length(var.instance_type) <= 30
+    error_message = "Instance type must be between 2 and 20 characters long."
+  }
+
+  validation {
+    condition = can(regex("^t[2-3]\\.",var.instance_type))
+    error_message = "Instance type must be a valid t2 or t3 instance type."
+  }
+  
+}
