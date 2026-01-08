@@ -1,1 +1,1 @@
-instance_type = "t4.small"
+instance_type = "t2.smallfdjsafbdsbfnafbdjlsafblsafdlsaf"
