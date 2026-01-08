@@ -73,11 +73,11 @@ variable "credentials" {
 }
 
 variable "user_locations" {
-  default = ["us-east-1", "us-west-2", "eu-east-1"] # Has duplicates
+  default = ["us-east-1", "us-west-2", "us-east-1"] # Has duplicates
 }
 
 variable "default_locations" {
-  
+
   default = ["us-east-1"]
    
 }
