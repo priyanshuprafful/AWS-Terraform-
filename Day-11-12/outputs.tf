@@ -36,3 +36,7 @@ output "credentials" {
     value = var.credentials
     sensitive = true
 }
+
+output "all_locations" {
+    value =  concat(var.default_locations, var.user_locations)
+}
