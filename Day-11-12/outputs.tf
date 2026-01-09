@@ -60,4 +60,8 @@ output  "positive_cost" {
 
 output "max_cost" {
     value = max(var.monthly_cost...)  #... is used to convert tuple to list
+} # yaha humne direct variable joki tuple hai uska use kara and earlier monthly cost ko local mein bhi store kara tha joki tuple hi tha but wo absolute value ke liye tha 
+
+output "min_cost" {
+    value = min(local.min_cost)
 } 
