@@ -59,5 +59,5 @@ output  "positive_cost" {
 # } 
 
 output "max_cost" {
-    value = max(local.positive_cost...)  #... is used to convert tuple to list
+    value = max(var.monthly_cost...)  #... is used to convert tuple to list
 } 
