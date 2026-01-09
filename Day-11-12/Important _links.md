@@ -1,9 +1,9 @@
 Blog Link 
 
-https://terraform-day11.hashnode.dev/day-11-mastering-terraform-functions-making-your-infrastructure-code-smarter
+https://terraform-day12.hashnode.dev/mastering-terraform-functions-the-missing-piece-of-your-infrastructure-puzzle-day-12?showSharer=true
 
 Linkedin Post Link 
 
 
 
-https://www.linkedin.com/posts/priyanshu8787_terraform-aws-devops-activity-7407008799301173248-XmEE
+https://www.linkedin.com/posts/priyanshu8787_terraform-aws-devops-ugcPost-7415438539183607809-spGs
