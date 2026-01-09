@@ -17,7 +17,6 @@ locals {
 
     positive_cost = [ for cost in var.monthly_cost : abs(cost) ]
 
-    min_cost = min(local.positive_cost)
 }
 
 # create s3 bucket
