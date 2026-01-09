@@ -74,3 +74,8 @@ output "total_cost" {
 output "avg_cost" {
     value = sum(local.positive_cost) / length(local.positive_cost)
 }
+
+output "current_timestamp" {
+    value = timestamp()
+  
+}
