@@ -1,29 +1,5 @@
 {
-    "project": "AWS-Terraform",
-    "environment": "development",
-    "region": "us-east-1",
-    "tags": {
-        "owner": "DevOps Team",
-        "cost_center": "Engineering",
-        "created_date": "2024-01-15"
-    },
-    "resources": [
-        {
-            "name": "web-server",
-            "type": "ec2",
-            "instance_type": "t3.medium",
-            "count": 2
-        },
-        {
-            "name": "database",
-            "type": "rds",
-            "engine": "postgresql",
-            "allocated_storage": 100
-        }
-    ],
-    "networking": {
-        "vpc_cidr": "10.0.0.0/16",
-        "enable_nat_gateway": true,
-        "enable_vpn": false
-    }
+    "name": "sample",
+    "version": "1.0.0",
+    "enabled": true
 }
