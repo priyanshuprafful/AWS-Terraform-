@@ -19,7 +19,7 @@ locals {
 
      config_file_exists = fileexists("./config.json")
 
-     config_data = local.config_file_exists ? jsondecode(file("./config.json")) : {}
+     config_data = local.config_file_exists ? jsondecode(file("./config.json")) : { environment = "default", owner = "unknown"  }
 
 }
 
