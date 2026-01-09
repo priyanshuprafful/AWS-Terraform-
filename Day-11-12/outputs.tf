@@ -46,14 +46,14 @@ output  "positive_cost" {
     value = local.positive_cost
 }   
 
-# output "max_cost" {
-#     value = max(local.positive_cost)
-# } 
+output "max_cost" {
+    value = max(local.positive_cost)
+} 
 
-# output "min_cost" {
-#     value = min(local.positive_cost)
-# } 
+output "min_cost" {
+    value = min(local.positive_cost)
+} 
 
-# output "total_cost" {
-#     value = sum(local.positive_cost)
-# } 
+output "total_cost" {
+    value = sum(local.positive_cost)
+} 
