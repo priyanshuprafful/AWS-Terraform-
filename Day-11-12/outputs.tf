@@ -79,3 +79,8 @@ output "current_timestamp" {
     value = timestamp()
   
 }
+
+output "config_file" {
+    value = local.config_data
+  
+}

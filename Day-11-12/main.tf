@@ -17,6 +17,10 @@ locals {
 
      positive_cost = tolist( [for cost in var.monthly_cost : abs(cost) ])
 
+     config_file_exists = fileexists("./config.json")
+
+     config_data = local.config_file_exists ? jsondecode(file("./config.json")) : {}
+
 }
 
 # create s3 bucket
