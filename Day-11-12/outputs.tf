@@ -43,7 +43,7 @@ output "all_locations" {
 
 output  "positive_cost" {
    #value = [ for cost in var.monthly_cost : abs(cost) ]
-    value = local.positive_cost # this is a tuple
+    value = (local.positive_cost) # this is a tuple
 }   
 
 # output "max_cost" {
@@ -63,5 +63,10 @@ output "max_cost" {
 } # yaha humne direct variable joki tuple hai uska use kara and earlier monthly cost ko local mein bhi store kara tha joki tuple hi tha but wo absolute value ke liye tha 
 
 output "min_cost" {
-    value = min(local.min_cost)
+    value = min(var.monthly_cost...)
 } 
+
+
+output "total_cost" {
+    value = sum(var.monthly_cost...)
+}
