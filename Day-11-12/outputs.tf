@@ -68,5 +68,5 @@ output "min_cost" {
 
 
 output "total_cost" {
-    value = sum(var.monthly_cost)
+    value = sum(local.positive_cost)
 }
